@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 html,body {
@@ -10,23 +11,69 @@ html,body {
     
 }
 
-body {
-    cursor: none;
-}
-
 
 
 main {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #374151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#cursor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    pointer-events: none; /* mouse events ignore kare */
-    transform: translate(-50%, -50%); /* center cursor */
+.box {
+    min-width: 300px;
+    min-height: 300px;
+    background-color: rgb(27, 27, 41);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    gap: 30px;
 }
 
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(192, 196, 199, 0.048);
+}
+
+.bottom {
+    display: flex;
+    gap: 40px;
+}
+
+.rest {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(128, 222, 235);
+}
+.rest,
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i {
+    color:black;
+
+}
+
+.play {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(128, 222, 235);
+}

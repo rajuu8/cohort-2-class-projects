@@ -1,7 +1,12 @@
-let cursor = document.querySelector('#cursor');
-let main = document.querySelector('main');
+let play  = document.querySelector('.play');
+let h2 = document.querySelectorAll('h2')
 
-main.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px'; // x-coordinate in pixels
-    cursor.style.top = e.clientY + 'px';  // y-coordinate in pixels
-});
+let count = 0;
+
+play.addEventListener('click', ()=> {
+
+   count++;
+   
+   h2.innerHTML = count;
+
+})
